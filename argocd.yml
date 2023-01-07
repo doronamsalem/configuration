@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: guestbook
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/doronamsalem/configuration.git
+    targetRevision: HEAD
+    path: helm-weatherapp
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: wa
+
+  syncPolicy:
+    syncOptions:
+    - ApplyOutOfSyncOnly=true
+
+    automated:
+      selfHeal: true
