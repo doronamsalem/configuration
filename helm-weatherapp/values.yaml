@@ -3,7 +3,7 @@ namespace: wa
 
 # Default values for deployment
 deployName: weather-app
-replicaCount: 1
+replicaCount: 3
 label: weather
 
 containers:
