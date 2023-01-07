@@ -29,7 +29,6 @@ spec:
       labels:
         app: weather
 
-containers:
     spec:
       containers:
         - name: app-server

@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/doronamsalem/configuration.git
     targetRevision: HEAD
-    path: deployment.yml
+    path: helm-weatherapp
   destination:
     server: https://kubernetes.default.svc
     namespace: wa
