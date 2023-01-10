@@ -63,3 +63,12 @@ metadata:
   namespace: wa
 data:
   BG_COLOR: "#FAFAD2"
+---
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: blue
+  namespace: wa
+data:
+  BG_COLOR: "#87CEFA"
