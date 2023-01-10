@@ -8,14 +8,15 @@ spec:
   source:
     repoURL: https://github.com/doronamsalem/configuration.git
     targetRevision: HEAD
-    path: helm-weatherapp
+    path: dev
   destination:
     server: https://kubernetes.default.svc
     namespace: wa
 
   syncPolicy:
     syncOptions:
-    - ApplyOutOfSyncOnly=true
+    - CreateNamespace=true
 
     automated:
       selfHeal: true
+      prune: true
