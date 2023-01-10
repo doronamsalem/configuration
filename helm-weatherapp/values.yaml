@@ -1,5 +1,5 @@
 # Default values for namespace
-namespace: wa1
+namespace: wa
 
 # Default values for deployment
 deployName: weather-app
