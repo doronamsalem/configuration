@@ -1,6 +1,6 @@
 apiVersion: v2
-name: test
-description: A Helm chart for Kubernetes
+name: weather_app
+description: A Helm chart containing all components foe weather website
 
 # A chart can be either an 'application' or a 'library' chart.
 #

@@ -7,9 +7,10 @@ spec:
   project: default
   source:
     repoURL: https://github.com/doronamsalem/configuration.git
+    path: helm-weatherapp
     targetRevision: HEAD
 #    chart: helm-weatherapp
-    path: production
+  
   destination:
     server: https://kubernetes.default.svc
     namespace: wa
