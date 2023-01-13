@@ -9,9 +9,9 @@ label: weather
 containers:
   name: app-server
   image:
-    repository: doronamsalem/website
+    repository: doronamsalem/production
     pullPolicy: Always
-    tag: "webserver"
+    tag: "version"
   ports:
     weatherapp: 8081
 
