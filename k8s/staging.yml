@@ -25,10 +25,8 @@ spec:
 
     spec:
       containers:
-      - args:
-        - server
+      - name: app-server
         image: "test_image:version"
-        name: app-server
         ports:
         - containerPort: 8081
         envFrom:
