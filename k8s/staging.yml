@@ -27,6 +27,7 @@ spec:
       containers:
       - name: app-server
         image: "test_image:version"
+        imagePullPolicy: Always
         ports:
         - containerPort: 8081
         envFrom:
