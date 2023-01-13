@@ -25,14 +25,15 @@ spec:
 
     spec:
       containers:
-      - name: app-server
+      - args:
+        - server
         image: "test_image:version"
-        imagePullPolicy: Always
+        name: app-server
         ports:
         - containerPort: 8081
         envFrom:
           - configMapRef:
-              name: yellow
+              name: yellow    
 ---
 
 apiVersion: v1
