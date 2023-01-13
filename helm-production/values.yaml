@@ -31,7 +31,7 @@ PV:
 service:
   name: weatherapp-svc
   type: ClusterIP
-  inbound_port: 8080
+  inbound_port: 8081
 
 # Default values for ingress
 ingress:
