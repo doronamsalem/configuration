@@ -1,6 +1,6 @@
 apiVersion: v2
-name: weather_app
-description: A Helm chart containing all components foe weather website
+name: weather_app_production
+description: A Helm chart containing all components for weather website
 
 # A chart can be either an 'application' or a 'library' chart.
 #
