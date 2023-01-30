@@ -11,7 +11,7 @@ containers:
   image:
     repository: doronamsalem/production
     pullPolicy: Always
-    tag: "version"
+    tag: "version"  #must be writen in line 14 for pipeline functioning
   ports:
     weatherapp: 8081
 
