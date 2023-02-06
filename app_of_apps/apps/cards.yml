@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/doronamsalem/configuration
-    path: app_of_apps/apps/deployment_files/weatherapp.yml
+    path: app_of_apps/apps/deployment_files/cards.yml
     targetRevision: HEAD
   
   destination:
