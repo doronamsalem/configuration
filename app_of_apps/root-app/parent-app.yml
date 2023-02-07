@@ -3,15 +3,23 @@ kind: Application
 metadata:
   name: root-app
   namespace: argocd
-  finalizers:
-  - resources-finalizer.argocd.argoproj.io
 spec:
+
   destination:
-    namespace: root-app
+    namespace: apps
     name: in-cluster
+
   project: default
+
   source:
     path: app_of_apps/apps/
     repoURL: https://github.com/doronamsalem/configuration
     targetRevision: HEAD
 
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+
+    automated:
+      selfHeal: true
+      prune: true
